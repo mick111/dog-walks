@@ -5,9 +5,14 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "format": "prettier --write .",
+    "check-format": "prettier --check ."
   },
   "dependencies": {
     "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.9.10"
   }
 }
