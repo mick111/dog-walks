@@ -215,7 +215,7 @@ export function getAccidents({ date, limit = 50, offset = 0 } = {}) {
   let where = ''
   const params = []
   if (date) {
-    where = 'WHERE a.date = ?'
+    where = 'WHERE date = ?'
     params.push(date)
   }
   return db.prepare(`
